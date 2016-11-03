@@ -1,16 +1,51 @@
 doctype html
-html
-    include vendor/nc/head
+html(lang='en')
+    include ./items/head
 
-    body(data-spy='scroll', data-target='#navSecondary', data-offset='170')
-        .body
-            include vendor/nc/header
-            include vendor/nc/rev-head
-            include vendor/nc/main
-            
+    body.my-bodystyle
+        include ./items/top-fixed-navbar
+        include ./items/avagedje
+        include ./items/transparent-container
 
 
 
 
-            include vendor/nc/land/n-foot
-    include vendor/nc/vendor
+    footer.main-container-last
+        h2  Pond Production
+
+
+
+
+
+
+
+
+
+
+
+
+// ul.none
+
+
+
+.Layer_3 {
+    background-image: url("images/Layer 3.png");
+    opacity: 0.502;
+    position: absolute;
+    left: 0px;
+    top: 205px;
+    width: 1550px;
+    height: 600px;
+    z-index: 40;
+}
+
+.Layer_3 {
+    background-image: url("images/Layer 3.png");
+    opacity: 0.502;
+    position: absolute;
+    left: 0px;
+    top: 205px;
+    width: 1550px;
+    height: 600px;
+    z-index: 40;
+}
