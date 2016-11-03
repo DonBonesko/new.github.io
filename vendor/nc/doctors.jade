@@ -1,0 +1,293 @@
+//Doctors
+.main(role='main')
+    section.page-header.page-header-color.page-header-primary.page-header-float-breadcrumb
+        .container
+            .row
+                .col-md-12
+                    h1.mt-xs
+                        | Команда
+                        //span Learn more about our departments
+                    ul.breadcrumb.breadcrumb-valign-mid
+                        li
+                            a(href='index.html') Головна
+                        li.active Команда
+
+    section.section-custom-medical
+        hr.tall
+        .container
+            h2  Наші
+                strong    Принципи
+
+            .row
+                .col-md-offset-1.col-md-5
+                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='500')
+                        .feature-box-icon
+                            i.fa.fa-medkit
+                        .feature-box-info
+                            h4.mb-sm Боротись за кожен зуб
+                            p.mb-lg
+                                | Ми намагаємося зробити усе можливе і неможливе аби зберегти Ваші власні зуби і вдаємося до видалення лише коли це неминуче.
+
+                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='600')
+                        .feature-box-icon
+                            i.fa.fa-user-md
+                        .feature-box-info
+                            h4.mb-sm Реальний базис
+                            p.mb-lg
+                                | Ми спираємося на доказову медицину, що дає нам змогу проводити обгрунтоване індивідуальне лікування кожного нашого пацієнта.
+                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='700')
+                        .feature-box-icon
+                            i.fa.fa-check-square-o
+                        .feature-box-info
+                            h4.mb-sm Тільки найкраще
+                            p.mb-lg
+                                | Ми працюємо лише з високоякіснмии матеріалами та на сучасному обладнанні аж до операцій під мікроскопом.
+
+                .col-md-offset-1.col-md-3
+                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='700')
+                        a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-roman.html', data-ajax-on-page='')
+                            img.img-nc-detail.img-responsive(src='img/nc-team/nc-roman.jpg', alt='')
+                            //p.lead Головний лікар - Роман
+
+
+
+
+                //.col-md-5.isotope-item.leadership
+                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='400')
+                        h4
+                        .embed-responsive.embed-responsive-16by9
+                            //iframe(frameborder='0', allowfullscreen='', src='http://www.youtube.com/embed/oNBBijn4JuY?showinfo=0&wmode=opaque')
+                            iframe(width="1280" height="720" src='https://www.youtube.com/embed/ViBARBSWU48' frameborder='0' allowfullscreen='false')
+                        //hr.tall
+        .container
+            .row
+                .col-md-12.center
+                    h2.word-rotator-title.mb-lg
+                        | Ми надаємо відмінні стоматологічні послуги, які :
+                        br
+                        strong.inverted.inverted-primary
+                            span.word-rotate(data-plugin-options='{"delay": 2000, "animDelay": 500}')
+                                span.word-rotate-items
+                                    span подарують емоції !
+                                    span збережуть зуби !
+                                    span повернуть посмішку !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    section.team
+        .container
+            .row.mt-xlg
+                //.col-md-offset-1
+                .col-md-12
+                    //h2.font-weight-semibold.m-none Лікарі
+                    p.lead.font-weight-normal
+                    #porfolioAjaxBoxMedical.ajax-box.ajax-box-init.mb-lg
+                        .bounce-loader
+                            .bounce1
+                            .bounce2
+                            .bounce3
+                        #porfolioAjaxBoxContentMedical.ajax-box-content
+            .row.mb-xlg
+                .col-md-offset-1.col-md-10
+                    .owl-carousel.owl-theme.nav-bottom.rounded-nav.pl-xs.pr-xs(data-plugin-options='{"items": 4, "loop": false, "dots": false, "nav": true}')
+                        //Miroslav
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='300')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-miroslav.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-roman.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-miroslav.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Хірург-імплантолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Мирослав
+                                            //Солонько
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+                        //Marta
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInDown', data-appear-animation-delay='400')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-marta.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-marta.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-marta.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Дитячий стоматолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Марта
+                                            //Гривняк
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+
+                        //Oksana
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='500')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-oksana.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-oksana.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-oksana.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Гігієніст-пародонтолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Оксана
+                                            //Сов'як
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+                        // Taras
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='600')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-taras.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-taras.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-taras.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Хірург-імплантолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Тарас
+                                            //Шубенко
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+                        //Olga
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-olga.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-olga.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-olga.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Старший-Стоматолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Ольга
+                                            //Янчинська
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+                        //Dmitro
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='600')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-dmitro.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-dmitro.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-dmitro.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Хірург-ендодонтист
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Дмитро
+                                            //Милько
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+                        //Natalia
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-natalia.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-natalia.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-natalia.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Гігієніст-породантолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Наталія
+                                            //Цинтарук
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+
+                        // Miron
+
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-miron.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-miron.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-miron.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Старший-стоматолог
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Мирон
+                                            //Сов'як
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+                        //Galya
+
+                        .pr-sm.pl-sm.appear-animation(data-appear-animation='fadeInRight', data-appear-animation-delay='300')
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-galyna.html', data-ajax-on-page='')
+                                img.img-nc-detail.img-responsive(src='img/nc-team/nc-galyna.jpg', alt='')
+
+                            a.text-decoration-none(href='#', data-href='vendor/nc/doctors/doctor-d-galyna.html', data-ajax-on-page='')
+                                span.thumb-info
+                                    span.img-nc-detail.thumb-info-caption.p-md.pt-xlg.pb-xlg
+                                        span.custom-thumb-info-title
+                                            span.custom-thumb-info-type.font-weight-light.text-md    Старша Медсестра
+                                            span.custom-thumb-info-inner.font-weight-semibold.text-lg    Галина
+                                            //Малинівська
+                                            //i.icon-arrow-right-circle.icons.font-weight-semibold.text-lg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
