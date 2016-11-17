@@ -1,0 +1,46 @@
+header#header.header-narrow.header-semi-transparent-light(data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 1, "stickySetTop": "1"}')
+    .header-body
+        .header-container.container
+            .header-row
+                .header-column
+                    .header-logo
+                        img.logo-default(alt='Porto', width='290', height='190', src='img/auto-p/car.png')
+                        //img.logo-default(alt='Porto', width='324', height='212', src='img/demos/construction/logo-construction.png')
+                        a(href='index.html')
+                            img.logo-small(alt='AutoPartner', width='82', height='54', src='img/auto-p/car.png')
+                .header-column
+                    .header-row
+                        .header-nav.header-nav-stripe
+                            button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main')
+                                i.fa.fa-bars
+                            .header-nav-main.header-nav-main-square.header-nav-main-effect-2.header-nav-main-sub-effect-1.collapse
+                                nav
+                                    ul#mainNav.nav.nav-pills
+                                        li.active
+                                            a(href='#home')
+                                                | Головна
+                                        li
+                                            a(href='#ap')
+                                                | АвтоПартнер
+                                        li
+                                            a(href='#serv')
+                                                | Асортимент
+                                        li.dropdown
+                                            a.dropdown-toggle(href='#')
+                                                | Магазин
+                                            ul.dropdown-menu
+                                                li
+                                                    a(href='index.html') Двигун
+                                                li
+                                                    a(href='index.html') Трансмісія
+                                                li
+                                                    a(href='index.html') Салон
+                                                li
+                                                    a(href='index.html') Кузов
+                                        //li
+                                            a(href='#')
+                                                | Магазин
+                                        //li
+                                            a(href='demo-construction-contact.html')
+                                                | Контакти
+

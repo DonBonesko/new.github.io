@@ -1,0 +1,173 @@
+//footer#footer
+    .container
+        .row
+            .col-md-4
+                h4.heading-primary Дзвоніть
+                //span.phone (800) 123-4567
+                p.mb-none +38 (097) 425 46 46
+                p.mb-none +38 (095) 470 30 34
+                ul.list.list-icons.list-icons-sm
+                    li
+                        i.fa.fa-envelope
+                        a(href='mailto:avtopartnerlviv@gmail.com') avtopartnerlviv@gmail.com
+                ul.social-icons
+                    li.social-icons-facebook
+                        a(href='http://www.facebook.com/', target='_blank', title='Facebook')
+                            i.fa.fa-facebook
+                    li.social-icons-twitter
+                        a(href='http://www.twitter.com/', target='_blank', title='Twitter')
+                            i.fa.fa-twitter
+                    li.social-icons-linkedin
+                        a(href='http://www.linkedin.com/', target='_blank', title='Linkedin')
+                            i.fa.fa-linkedin
+
+
+            .col-md-4
+                h4.heading-primary Напишіть нам
+                // p У Вас є запитання або повідомлення - напишіть нам, що б ми змогли допомогти Вам.
+                form#contactForm(action='php/contact-form.php', method='POST', novalidate='novalidate')
+                    input#subject(type='hidden', value='Contact Form', name='subject')
+                    .row
+                        .form-group
+                            .col-md-6
+                                label Ваше ім'я *
+                                input#name.form-control(type='text', value='', data-msg-required='Введіть будь-ласка Ваше ім я.', maxlength='100', name='ім я', required='', aria-required='true')
+                            .col-md-6
+                                label Ваша електронна адреса *
+                                input#email.form-control(type='email', value='', data-msg-required='Введіть Вашу електронну адресу.', data-msg-email='Введіть коректну електронну адресу.', maxlength='100', name='email', required='', aria-required='true')
+                    .row
+                        .form-group
+                            .col-md-12
+                                label Повідомлення *
+                                textarea#message.form-control(maxlength='5000', data-msg-required='Напишіть Ваше повідомлення.', rows='2', name='message', required='', aria-required='true')
+                    .row
+                        .col-md-offset-4.col-md-4
+                            input.btn.btn-primary.mb-xl(type='submit', value='Надіслати', data-loading-text='Loading...')
+                        .col-md-8
+                            #contactSuccess.alert.alert-success.hidden
+                                | Повідомлення було успішно надіслано.
+                            #contactError.alert.alert-danger.hidden
+                                | Сталась помилка при надсиланні повідомлення.
+
+            .col-md-4
+                h4.heading-primary АвтоПартнер
+                p
+                    | "АвтоПартнер" - це мережа магазинів гуртово-роздрібної торгівлі автозапчастинами.
+                    a.btn-flat.btn-xs(href='#')
+                        | Детальніше
+                        i.fa.fa-arrow-right
+                hr.light
+
+        .footer-copyright
+            .row
+                .col-md-12.center
+                    p © Copyright 2016. Всі права захищено.
+
+
+
+footer#footer.short
+    .container
+        .row
+            .col-md-3
+                h4.heading-primary Дзвоніть
+                //span.phone (800) 123-4567
+                span.phone +38 (097) 425 46 46
+                span.phone +38 (095) 470 30 34
+
+            //.col-md-3
+                h4.heading-primary Дзвоніть
+                //span.phone (800) 123-4567
+                span.phone +38 (097) 425 46 46
+                span.phone +38 (095) 470 30 34
+
+
+
+            .col-md-offset-1.col-md-4
+                h2.mt-xl.mb-none Потрібна консультація? Відправляйте запит!
+                p Ми будемо раді відповісти на будь-яке Ваше запитання чи допомогти Вам із підборром товару.
+                .divider.divider-primary.divider-small.mb-xl
+                    hr
+                form#contactForm(action='php/contact-form.php', method='POST')
+                    .row
+                        .form-group
+                            .col-sm-6
+                                input#name.form-control(type='text', value='', placeholder='Як Вас звати?', data-msg-required='Як Вас звати?', maxlength='100', name='Ім я', required='')
+                            .col-sm-6
+                                input#email.form-control(type='email', value='', placeholder='Вкажіть Ваш e-mail *', data-msg-required=' e-mail', data-msg-email='Вкажіть коректний e-mail', maxlength='100', name='email', required='')
+                    .row
+                        .form-group
+                            .col-md-12
+                                input#subject.form-control(type='text', value='', placeholder='Тема', data-msg-required='Вкажіть тему запиту', maxlength='100', name='subject', required='')
+                    .row
+                        .form-group
+                            .col-md-12
+                                textarea#message.form-control(maxlength='5000', placeholder='Запит *', data-msg-required='Напишіть будь-ласка Ваш запит', rows='3', name='message', required='')
+                    .row
+                        .col-md-12
+                            input.btn.btn-primary.mb-xl(type='submit', value='Відправити запит', data-loading-text='Завантаження...')
+                            #contactSuccess.alert.alert-success.hidden
+                                | Повідомлення надіслано успішно
+                            #contactError.alert.alert-danger.hidden
+                                | Сталась помилка при надсиланні повідомлення...
+
+
+
+            .col-md-offset-1.col-md-3
+                h4.heading-primary Пишіть
+                ul.list.list-icons.mt-xl
+                    li
+                        i.fa.fa-map-marker
+                        strong Адреса:
+                        |  м. Зимна Вода, Україна
+                    li
+                        i.fa.fa-envelope
+                        strong Email:
+                        a(href='mailto:avtopartnerlviv@gmail.com') avtopartnerlviv@gmail.com
+
+                ul.social-icons
+                    li.social-icons-facebook
+                        a(href='http://www.facebook.com/', target='_blank', title='Facebook')
+                            i.fa.fa-facebook
+                    li.social-icons-twitter
+                        a(href='http://www.twitter.com/', target='_blank', title='Twitter')
+                            i.fa.fa-twitter
+                    li.social-icons-linkedin
+                        a(href='http://www.linkedin.com/', target='_blank', title='Linkedin')
+                            i.fa.fa-linkedin
+                //.col-md-offset-1.col-md-3
+                    h4.heading-primary Пишіть
+                    ul.list.list-icons.mt-xl
+                        li
+                            i.fa.fa-map-marker
+                            strong Адреса:
+                            |  м. Зимна Вода, Україна
+                        li
+                            i.fa.fa-envelope
+                            strong Email:
+                            a(href='mailto:avtopartnerlviv@gmail.com') avtopartnerlviv@gmail.com
+
+                    ul.social-icons
+                        li.social-icons-facebook
+                            a(href='http://www.facebook.com/', target='_blank', title='Facebook')
+                                i.fa.fa-facebook
+                        li.social-icons-twitter
+                            a(href='http://www.twitter.com/', target='_blank', title='Twitter')
+                                i.fa.fa-twitter
+                        li.social-icons-linkedin
+                            a(href='http://www.linkedin.com/', target='_blank', title='Linkedin')
+                                i.fa.fa-linkedin
+
+
+    .footer-copyright
+        .container
+            .row
+                .col-md-offset-3.col-md-6
+                    p
+                        | © Copyright 2016. All Rights Reserved.
+                        a(href='demo-law-firm-contact-us.html') Contact
+
+
+
+
+
+

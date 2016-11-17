@@ -1,0 +1,38 @@
+header#header.header-mobile-nav-only(data-plugin-options='{"stickyEnabled": true, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 57, "stickySetTop": "-57px", "stickyChangeLogo": true}', style='min-height: 180px;')
+    .header-body(style='top: 0px;')
+        .header-container.container
+            .header-row
+                .header-column
+                    .header-logo(style='width: 315px; height: 54px;')
+                        a(href='index.html')
+                            img.logo-f(alt='nc', width='315', height='54', data-sticky-width='315', data-sticky-height='54', data-sticky-top='33', src='img/nc/nc-main.png', style='top: 0px; width: 195px; height: 54px;')
+                .header-column
+                    .header-row
+                        .header-nav.header-nav-top-line
+                            button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main')
+                                i.fa.fa-bars
+                            ul.header-social-icons.social-icons.hidden-xs
+                                li.social-icons-facebook
+                                    a(href='http://www.facebook.com/', target='_blank', title='Facebook')
+                                        i.fa.fa-facebook
+                                li.social-icons-twitter
+                                    a(href='http://www.twitter.com/', target='_blank', title='Twitter')
+                                        i.fa.fa-twitter
+                                li.social-icons-linkedin
+                                    a(href='http://www.linkedin.com/', target='_blank', title='Linkedin')
+                                        i.fa.fa-linkedin
+                            .header-nav-main.header-nav-main-square.header-nav-main-effect-2.header-nav-main-sub-effect-1.collapse
+                                nav
+                                    ul#mainNav.nav.nav-pills
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#main-p') Головна
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#clinic') Клініка
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#service') Послуги
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#team') Команда
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#partners') Партнери
+                                        li
+                                            a(data-hash='', data-hash-offset='70', href='#contact') Контакти

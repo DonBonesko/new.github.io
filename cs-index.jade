@@ -1,0 +1,122 @@
+doctype html
+html
+    head
+        // Basic
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Coming Soon | Автопартнер
+        meta(name='keywords', content='Web magazine')
+        meta(name='description', content='Web magazine')
+        //meta(name='author', content='okler.net')
+        // Favicon
+        link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+        link(rel='apple-touch-icon', href='img/apple-touch-icon.png')
+        // Mobile Metas
+        meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        // Web Fonts
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light', rel='stylesheet', type='text/css')
+        // Vendor CSS
+        link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
+        link(rel='stylesheet', href='vendor/simple-line-icons/css/simple-line-icons.min.css')
+        link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.carousel.min.css')
+        link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.theme.default.min.css')
+        link(rel='stylesheet', href='vendor/magnific-popup/magnific-popup.min.css')
+        // Theme CSS
+        link(rel='stylesheet', href='css/theme.css')
+        link(rel='stylesheet', href='css/theme-elements.css')
+        link(rel='stylesheet', href='css/theme-blog.css')
+        link(rel='stylesheet', href='css/theme-shop.css')
+        link(rel='stylesheet', href='css/theme-animate.css')
+        // Skin CSS
+        link(rel='stylesheet', href='master/less/skin-default.css')
+        // Theme Custom CSS
+        link(rel='stylesheet', href='css/custom.css')
+        // Head Libs
+        script(src='vendor/modernizr/modernizr.min.js')
+    body
+        .body.coming-soon
+            header#header(data-plugin-options='{"stickyEnabled": false}')
+                .header-body
+                    .header-top
+                        .container
+                            .row
+                                .col-md-offset-3.col-md-2
+                                    p
+                                        | На зв'язку!
+                                .col-md-2
+                                    p
+                                        span.ml-xs
+                                            i.fa.fa-phone
+                                            |    (067) 739-97-79
+                                .col-md-2
+                                    p
+                                        span.hidden-xs
+                                            a(href='#') ilyinskyy.kv@gmail.com
+            .main(role='main')
+                .container
+                    .row
+                        .col-md-12.center
+                            .logo
+                                a(href='index.html')
+                                    img(width='240', height='195', src='ap-img/ap-old/autologo.png', alt='AP')
+
+                    .row
+                        .col-md-12.center
+                            h1.mb-sm.small Наш лендінг в процесі розробки ...
+                            p.mb-none.lead
+                                | Орієнтовна дата запуску в он-лайн 1 грудня 2016 року
+                            p
+                                | Ми наполегливо працюємо щоб цього досягти!
+
+                    .row
+
+                        .col-md-offset-5.col-md-2
+                            .call-to-action-btn
+                                a.btn.btn-borders.center.btn-secondary.mr-xs.mb-sm(href='index.html', target='_blank') Остання версія
+
+                    hr.tall
+                    .row
+                        .col-md-6.col-md-offset-3
+                            .progress-bars
+                                .progress-label
+                                    span
+                                    strong Концепція
+                                    |  - Завершено
+                                .progress
+                                    .progress-bar.progress-bar-secondary(data-appear-progress-animation='100%')
+                                        span.progress-bar-tooltip 100%
+
+                                .progress-label
+                                    span
+                                    strong Контент
+
+                                .progress
+                                    .progress-bar.progress-bar-secondary(data-appear-progress-animation='20%', data-appear-animation-delay='200')
+                                        span.progress-bar-tooltip 20%
+
+                                .progress-label
+                                    span
+                                    strong Упаковка
+
+                                .progress
+                                    .progress-bar.progress-bar-secondary(data-appear-progress-animation='35%', data-appear-animation-delay='400')
+                                        span.progress-bar-tooltip 35%
+
+                                .progress-label
+                                    span
+                                    strong Верстка
+
+                                .progress
+                                    .progress-bar.progress-bar-secondary(data-appear-progress-animation='37%', data-appear-animation-delay='500')
+                                        span.progress-bar-tooltip 37%
+
+            footer#footer.short
+                .footer-copyright
+                    .container
+                        .row
+
+                            .col-md-3.pull-right
+                                p © Copyright 2016. All Rights Reserved.
+
+            include ap-vendor/vendor

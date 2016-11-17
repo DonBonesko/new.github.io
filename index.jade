@@ -1,17 +1,304 @@
 doctype html
-html(lang='en')
-    include ./items/head
+html
+    head
+        // Basic
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        title Auto Partner
+        meta(name='keywords', content='web store')
+        meta(name='description', content='e-commerce')
+        //meta(name='author', content='okler.net')
+        // Favicon
+        link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+        link(rel='apple-touch-icon', href='img/apple-touch-icon.png')
+        // Mobile Metas
+        meta(name='viewport', content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        // Web Fonts
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light', rel='stylesheet', type='text/css')
+        // Vendor CSS
+        link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='vendor/font-awesome/css/font-awesome.min.css')
+        link(rel='stylesheet', href='vendor/simple-line-icons/css/simple-line-icons.min.css')
+        link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.carousel.min.css')
+        link(rel='stylesheet', href='vendor/owl.carousel/assets/owl.theme.default.min.css')
+        link(rel='stylesheet', href='vendor/magnific-popup/magnific-popup.min.css')
+        // Theme CSS
+        link(rel='stylesheet', href='css/theme.css')
+        link(rel='stylesheet', href='css/theme-elements.css')
+        link(rel='stylesheet', href='css/theme-blog.css')
+        link(rel='stylesheet', href='css/theme-shop.css')
+        link(rel='stylesheet', href='css/theme-animate.css')
+        // Current Page CSS
+        link(rel='stylesheet', href='vendor/rs-plugin/css/settings.css')
+        link(rel='stylesheet', href='vendor/rs-plugin/css/layers.css')
+        link(rel='stylesheet', href='vendor/rs-plugin/css/navigation.css')
+        // Skin CSS
+        link(rel='stylesheet', href='master/less/skin-default.css')
+        // Demo CSS
+        link(rel='stylesheet', href='css/demos/demo-law-firm.css')
+        // Theme Custom CSS
+        link(rel='stylesheet', href='css/custom.css')
+        // Head Libs
+        script(src='vendor/modernizr/modernizr.min.js')
+    body
+        #her.body
+            header#header.header-no-border-bottom(data-plugin-options='{"stickyEnabled": true,  "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 115, "stickySetTop": "-115px", "stickyChangeLogo": false}')
+                .header-body
+                    .header-container.container
+                        .header-row
+                            .header-column
+                                .header-logo
+                                    a(href='index.html')
+                                        img(alt='AP', width='82', height='65', data-sticky-width='82', data-sticky-height='40', data-sticky-top='33', src='ap-img/ap-old/autologo.png')
+                            .header-column
+                                ul.header-extra-info
+                                    li
+                                        .feature-box.feature-box-call.feature-box-style-2
+                                            .feature-box-icon
+                                                i.icon-call-end.icons
+                                            .feature-box-info
+                                                h4.mb-none +38 (097) 425 46 46
+                                    li.hidden-xs
+                                        .feature-box.feature-box-mail.feature-box-style-2
+                                            .feature-box-icon
+                                                i.icon-envelope.icons
+                                            .feature-box-info
+                                                h4.mb-none
+                                                    a(href='mailto:avtopartnerlviv@gmail.com') avtopartnerlviv@gmail.com
+                    .header-container.header-nav.header-nav-bar.header-nav-bar-primary
+                        .container
+                            button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main')
+                                //| Menu
+                                i.fa.fa-bars
+                            .header-search.visible-lg
+                                form#searchForm(action='page-search-results.html', method='get')
+                                    .input-group
+                                        input#q.form-control(type='text', name='q', placeholder='Пошук...', required='')
+                                        span.input-group-btn
+                                            button.btn.btn-default(type='submit')
+                                                i.icon-magnifier.icons
+                            .header-nav-main.header-nav-main-light.header-nav-main-effect-1.header-nav-main-sub-effect-1.collapse
+                                nav
+                                    ul#mainNav.nav.nav-pills
+                                        li
+                                            a(href='#her')
+                                                | Головна
+                                        li
+                                            a(href='#why-we')
+                                                | Авто Партнер
+                                        li
+                                            a(href='#team')
+                                                | Команда
+                                        li
+                                            a(href='#')
+                                                | Асортимент
 
-    body.my-bodystyle
-        include ./items/top-fixed-navbar
-        include ./items/avagedje
-        include ./items/transparent-container
+
+
+            .main(role='main')
+                .slider-container.rev_slider_wrapper(style='height: 960px;')
+                    #revolutionSlider.slider.rev_slider
+                        ul
+                            li(data-transition='fade', data-title='Асортимент', data-thumb='ap-img/ap-main/rev.jpg')
+                                img.rev-slidebg(src='ap-img/ap-main/rev.jpg', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+                                .tp-caption.main-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-205', data-start='1000', style='z-index: 5; font-size: 40px;', data-transform_in='y:[-300%];opacity:0;s:500;') Наш асортимент:
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-145', data-start='1500', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Мастила і фільтри
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-100', data-start='1800', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Ходова і шини
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-55', data-start='2100', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Трансмісія
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-10', data-start='2400', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Двигун
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='35', data-start='2700', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Кузов
+                                .tp-caption.tp-caption-overlay-opacity.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='80', data-start='3000', data-transform_in='x:[-100%];opacity:0;s:500;')
+                                    i.fa.fa-check
+                                    |  Засоби догляду за авто
+
+                                a.tp-caption.btn.btn-secondary.btn-lg(data-hash='', data-hash-offset='85', href='#practice-areas', data-x='right', data-hoffset='100', data-y='center', data-voffset='150', data-start='3500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;')
+                                    | Детальніше...
+                                    //i.fa.fa-long-arrow-right
+
+                            li(data-transition='fade', data-title='Склад', data-thumb='ap-img/ap-main/rev-7.jpg')
+                                img.rev-slidebg(src='ap-img/ap-main/rev-7.jpg', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+                                .tp-caption.top-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='-95', data-start='1000', style='z-index: 5', data-transform_in='y:[-300%];opacity:0;s:500;') Понад 2000 товарних позицій
+                                .tp-caption.main-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='-45', data-start='1500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') На складі АвтоПартнер
+                                .tp-caption.bottom-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='5', data-start='2000', style='z-index: 5', data-transform_in='y:[100%];opacity:0;s:500;') і значно більше під замовлення.
+                                a.tp-caption.btn.btn-primary.btn-lg(href='index.html', data-x='left', data-hoffset='100', data-y='center', data-voffset='80', data-start='2500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Замовити
+
+
+                            li(data-transition='fade', data-title='Продавці', data-thumb='ap-img/ap-main/rev-8.jpg')
+                                img.rev-slidebg(src='ap-img/ap-main/rev-8.jpg', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+                                .tp-caption.top-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-95', data-start='1000', style='z-index: 5', data-transform_in='y:[-300%];opacity:0;s:500;') Потребуєте допомоги у віборі запчастини
+                                .tp-caption.main-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-45', data-start='1500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Наші компететні продавці
+                                .tp-caption.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='5', data-start='2000', style='z-index: 5', data-transform_in='y:[100%];opacity:0;s:500;') нададуть вичерпну консультацію
+                                a.tp-caption.btn.btn-primary.btn-lg(data-hash='', data-hash-offset='85', href='index.html', data-x='right', data-hoffset='100', data-y='center', data-voffset='80', data-start='2500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Отримати консультацію
+
+
+                            li(data-transition='fade', data-title='Доставка', data-thumb='ap-img/ap-main/rev-3.jpg')
+                                img.rev-slidebg(src='ap-img/ap-main/rev-3.jpg', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+                                .tp-caption.top-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-95', data-start='1000', style='z-index: 5', data-transform_in='y:[-300%];opacity:0;s:500;') В межах м.Львів
+                                .tp-caption.main-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='-45', data-start='1500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Безкоштовна доставка
+                                .tp-caption.bottom-label(data-x='right', data-hoffset='100', data-y='center', data-voffset='5', data-start='2000', style='z-index: 5', data-transform_in='y:[100%];opacity:0;s:500;') У інші міста відправляємо "Новою-Поштою"
+                                a.tp-caption.btn.btn-primary.btn-lg(data-hash='', data-hash-offset='85', href='index.html', data-x='right', data-hoffset='100', data-y='center', data-voffset='80', data-start='2500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Замовити доставку
+
+                            li(data-transition='fade', data-title='АвтоПартнер', data-thumb='ap-img/ap-main/orko-full.jpg')
+                                img.rev-slidebg(src='ap-img/ap-main/orko-full.jpg', alt='', data-bgposition='center center', data-bgfit='cover', data-bgrepeat='no-repeat')
+                                .tp-caption.top-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='-95', data-start='1000', style='z-index: 5', data-transform_in='y:[-300%];opacity:0;s:500;') Запрошуємо до магазину
+                                .tp-caption.main-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='-45', data-start='1500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') АвтоПартнер
+                                .tp-caption.bottom-label(data-x='left', data-hoffset='100', data-y='center', data-voffset='5', data-start='2000', style='z-index: 5', data-transform_in='y:[100%];opacity:0;s:500;') Ваш Партнер №1 у питаннях пошуку та придбання автозапчастин
+                                a.tp-caption.btn.btn-primary.btn-lg(href='index.html', data-x='left', data-hoffset='100', data-y='center', data-voffset='80', data-start='2500', data-whitespace='nowrap', data-transform_in='y:[100%];s:500;', data-transform_out='opacity:0;s:500;', style='z-index: 5', data-mask_in='x:0px;y:0px;') Замовити Кол Бєк
+                #why-we.row
+                section.section.section-default.section-no-border.mt-none
+                    .container
+                        .row.mb-xl
+                            .col-md-6
+                                h2.mt-xl.mb-none "АвтоПартнер"
+                                .divider.divider-primary.divider-small.mb-xl
+                                    hr
+                                p.mt-lg
+                                    | - це мережа магазинів гуртово-роздрібної торгівлі автозапчастинами. Ми займаємося цією справою вже понад 12 років. Ми злагоджена команда професіоналів своєї справи.  Ми намагаємось підходити індивідуально до кожного замовлення і робимти усе, що б наші клієнти отримували саме те, чого потребують, вчасно і за адекватні гроші.
+                                //a.mt-md(href='index.html')
+                                    | Детільніше...
+                                    i.fa.fa-long-arrow-right
+
+
+
+                            .col-md-6
+                                h2.mt-xl.mb-none Наша Міссія
+                                .divider.divider-primary.divider-small.mb-xl
+                                    hr
+                                p.mt-lg
+                                    | Наша праця покликана створювати оптимальні умови для вибору та придбання нашими клієнтами якісних автозапчастин за доступними цінами. Для нас торгівля запчастинами - це дещо більше ніж просто торгівля! Звертайтесь до нас і Ви зможете у цьому переконатись!
 
 
 
 
-    footer.main-container-last
-        h2  Pond Production
+
+
+                    .container
+                        .row
+                            .col-md-12
+                                .owl-carousel.owl-theme.stage-margin.rounded-nav(data-plugin-options='{"margin": 25, "loop": true, "nav": false, "dots": false, "stagePadding": 40, "items": 12, "autoplay": true, "autoplayTimeout": 3000}')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/bmw.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mer-b.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/volvo.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/porsche.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/vw.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mitsu-b.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/honda.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/fiat.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/ford.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/audi.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mazda.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/nissan.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/bmw.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mer-b.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/volvo.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/porsche.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/vw.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mitsu-b.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/honda.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/fiat.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/ford.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/audi.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/mazda.png', alt='')
+                                    div
+                                        a.text-decoration-none(href='index.html')
+                                            img.img-responsive.img-min(src='ap-img/ap-brands/nissan.png', alt='')
+
+                section
+                    //hr.tall
+                    .container
+                        .row
+                            .col-md-12
+                                h2.mt-xl.mb-none Чому Ми?
+                                .divider.divider-primary.divider-small.mb-xl
+                                    hr
+                        .row
+                            .col-md-6
+                                .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='500')
+                                    .feature-box-icon
+                                        i.fa.fa-group
+                                    .feature-box-info
+                                        h4.mb-sm Компетентні продавці
+                                        p.mb-lg
+                                            |   Наші продавці добре розуміються на запчастинах, які продають, тому Ви отримаєте саме те що шукаєте.
+                                .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='600')
+                                    .feature-box-icon
+                                        i.fa.fa-truck
+                                    .feature-box-info
+                                        h4.mb-sm Безкоштовна доставка
+                                        p.mb-lg
+                                            | Ми безкоштовно доставимо Ваше замовлення в межах м. Львова, у інші регіони - Новою Поштою
+                                .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='700')
+                                    .feature-box-icon
+                                        i.fa.fa-money
+                                    .feature-box-info
+                                        h4.mb-sm Наявність на складі
+                                        p.mb-lg
+                                            | Більшість товару уже є на нашому складі і тому Вам не доведеться довго чекати на Ваше замовлення
+                            .col-md-5.isotope-item.leadership
+                                .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInLeft', data-appear-animation-delay='400')
+                                    h4
+                                    .embed-responsive.embed-responsive-16by9
+                                        iframe(width='854', height='480', src='https://www.youtube.com/embed/VIM4dviMZ4Y', frameborder='0', allowfullscreen='')
+
+
+                                        //iframe(frameborder='0', allowfullscreen='', width="1280" height="720" src='https://www.youtube.com/embed/ViBARBSWU48')
+                        //hr.tall
 
 
 
@@ -23,3 +310,235 @@ html(lang='en')
 
 
 
+
+
+                        //#practice-areas.container
+                            .row
+                                .col-md-12.center
+                                    h2.mt-xl.mb-none Асортимент
+                                    .divider.divider-primary.divider-small.divider-small-center.mb-xl
+                                        hr
+                            .row.mt-lg
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='0')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/criminal-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm Багатий асортимент вже на складі
+                                            p
+                                                | Понад 2000 товарних позицій зараз на складі, Вам не доведеться чекати на Ваше замовлення.
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='0')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/business-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm    Низькі ціни
+                                            p
+                                                | У нас і справді дуже низькі ціни, зателефонуйте і переконаєтесь самі
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='0')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/health-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm Health Law
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                            .row.mt-md.mb-xl
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='300')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/divorce-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm Divorce Law
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='300')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/capital-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm Capital Law
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                                .col-md-4
+                                    .feature-box.feature-box-style-2.mb-xl.appear-animation(data-appear-animation='fadeInUp', data-appear-animation-delay='300')
+                                        .feature-box-icon
+                                            img(src='img/demos/law-firm/icons/accident-law.png', alt='')
+                                        .feature-box-info.ml-md
+                                            h4.mb-sm Accident Law
+                                            p
+                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.
+                                            //a.mt-md(href='demo-law-firm-practice-areas-detail.html')
+                                                | Learn More
+                                                i.fa.fa-long-arrow-right
+                            .container-fluid
+                                //.row
+                                    .col-md-6.p-none
+                                        section.section.section-primary.match-height.mt-xl(style='background-image: url(ap-img/ap-main/orko.jpg);')
+                                            .row
+                                                .col-half-section.col-half-section-right
+                                                    h2.mb-none Бренди
+                                                    .divider.divider-light.divider-small.mb-xl
+                                                        hr
+
+
+
+                                    .col-md-6.p-none.visible-md.visible-lg
+                                        section.parallax.section.section-parallax.match-height.mt-xl(data-plugin-parallax='', data-plugin-options='{"speed": 1.8, "horizontalPosition": "100%"}', data-image-src='ap-img/ap-main/orko.jpg', style='min-height: 450px;')
+
+
+                section.parallax.section.section-text-light.section-parallax.section-center.mt-xl(data-plugin-parallax='', data-plugin-options='{"speed": 1.3}', data-image-src='ap-img/ap-main/rev-10.jpg')
+                    .container
+                        .row
+                            .counters.counters-text-light
+                                .col-md-3.col-sm-6
+                                    .counter.mb-lg.mt-lg
+                                        i.icon-user-following.icons
+                                        strong(data-to='94', data-append='%') 94
+                                        label Рейтинг магазину на "АвтоПро"
+                                .col-md-3.col-sm-6
+                                    .counter.mb-lg.mt-lg
+                                        i.icon-diamond.icons
+                                        strong(data-to='12') 12
+                                        label Років досвіду роботи на ринку
+                                .col-md-3.col-sm-6
+                                    .counter.mb-lg.mt-lg
+                                        i.icon-present.icons
+                                        strong(data-to='3000', data-append='+') 3000
+                                        label Товарних позицій в наявності на складі
+                                .col-md-3.col-sm-6
+                                    .counter.mb-lg.mt-lg
+                                        i.icon-user.icons
+                                        strong(data-to='2000', data-append='+') 2000
+                                        label Задоволених кдлієнтів
+                    #team.row
+                section
+                    .container
+                        .row
+                            .col-md-12
+                                h2.mt-xl.mb-none Наша команда
+                                .divider.divider-primary.divider-small.mb-xl
+                                    hr
+                        .row.mt-lg
+                            .owl-carousel.owl-theme.owl-team-custom.show-nav-title(data-plugin-options='{"items": 4, "margin": 10, "loop": false, "nav": true, "dots": false}')
+                                .center.mb-lg
+                                    a(href='index.html')
+                                        img.img-responsive.img-team-filter(src='ap-img/ap-main/orest-s.jpg', alt='')
+                                    h4.mt-md.mb-none Орест
+                                    p.mb-none Директор
+                                    span.thumb-info-social-icons.mt-sm.pb-none
+                                        a(href='http://www.facebook.com', target='_blank')
+                                            i.fa.fa-facebook
+                                            span Facebook
+                                        a(href='http://www.twitter.com')
+                                            i.fa.fa-twitter
+                                            span Twitter
+                                        a(href='http://www.linkedin.com')
+                                            i.fa.fa-linkedin
+                                            span Linkedin
+                                        p
+                                .center.mb-lg
+                                    a(href='index.html')
+                                        img.img-responsive.img-team-filter(src='ap-img/ap-main/man-1-s.jpg', alt='')
+                                    h4.mt-md.mb-none Jeff Doe
+                                    p.mb-none Продавець-консультант
+                                    span.thumb-info-social-icons.mt-sm.pb-none
+                                        a(href='mailto:mail@example.com')
+                                            i.fa.fa-envelope
+                                            span Email
+                                        a(href='http://www.linkedin.com')
+                                            i.fa.fa-linkedin
+                                            span Linkedin
+                                        p
+                                .center.mb-lg
+                                    a(href='index.html')
+                                        img.img-responsive.img-team-filter(src='ap-img/ap-main/man-2-s.jpg', alt='')
+                                    h4.mt-md.mb-none Craig Doe
+                                    p.mb-none Продавець-консультант
+                                    span.thumb-info-social-icons.mt-sm.pb-none
+                                        a(href='http://www.facebook.com', target='_blank')
+                                            i.fa.fa-facebook
+                                            span Facebook
+                                        a(href='http://www.twitter.com')
+                                            i.fa.fa-twitter
+                                            span Twitter
+                                        a(href='http://www.linkedin.com')
+                                            i.fa.fa-linkedin
+                                            span Linkedin
+                                        p
+                                .center.mb-lg
+                                    a(href='index.html')
+                                        img.img-responsive.img-team-filter(src='ap-img/ap-main/man-3-s.jpg', alt='')
+                                    h4.mt-md.mb-none Richard Doe
+                                    p.mb-none Менеджер
+                                    span.thumb-info-social-icons.mt-sm.pb-none
+                                        a(href='http://www.linkedin.com')
+                                            i.fa.fa-linkedin
+                                            span Linkedin
+                                        p
+
+
+                //include ap-vendor/catalog
+
+
+
+
+
+
+        include ap-vendor/a-foot
+
+
+
+        // Vendor
+        script(src='vendor/jquery/jquery.min.js')
+        script(src='vendor/jquery.appear/jquery.appear.min.js')
+        script(src='vendor/jquery.easing/jquery.easing.min.js')
+        script(src='vendor/jquery-cookie/jquery-cookie.min.js')
+        script(src='vendor/bootstrap/js/bootstrap.min.js')
+        script(src='vendor/common/common.min.js')
+        script(src='vendor/jquery.validation/jquery.validation.min.js')
+        script(src='vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js')
+        script(src='vendor/jquery.gmap/jquery.gmap.min.js')
+        script(src='vendor/jquery.lazyload/jquery.lazyload.min.js')
+        script(src='vendor/isotope/jquery.isotope.min.js')
+        script(src='vendor/owl.carousel/owl.carousel.min.js')
+        script(src='vendor/magnific-popup/jquery.magnific-popup.min.js')
+        script(src='vendor/vide/vide.min.js')
+        // Theme Base, Components and Settings
+        script(src='js/theme.js')
+        // Current Page Vendor and Views
+        script(src='vendor/rs-plugin/js/jquery.themepunch.tools.min.js')
+        script(src='vendor/rs-plugin/js/jquery.themepunch.revolution.min.js')
+        // Current Page Vendor and Views
+        script(src='js/views/view.contact.js')
+        // Demo
+        script(src='js/demos/demo-law-firm.js')
+        // Theme Custom
+        script(src='js/custom.js')
+        // Theme Initialization Files
+        script(src='js/theme.init.js')
+        //
+          Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+          <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-12345678-1', 'auto');
+          ga('send', 'pageview');
+          </script>

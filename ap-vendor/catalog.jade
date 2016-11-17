@@ -1,0 +1,77 @@
+section
+    .container
+        .row
+            .col-md-3
+                aside#sidebar.sidebar(data-plugin-sticky='', data-plugin-options='{"minWidth": 991, "containerSelector": ".container", "padding": {"top": 110}}')
+                    h4.heading-primary
+                        strong Фільтр
+                    ul.nav.nav-list.mb-xlg.sort-source(data-sort-id='portfolio', data-option-key='filter', data-plugin-options='{"layoutMode": "fitRows", "filter": "*"}')
+                        li.active(data-option-value='*')
+                            a(href='#') Усі позиції
+                        li(data-option-value='.websites')
+                            a(href='#') Фільтри
+                        li(data-option-value='.logos')
+                            a(href='#') Мастила
+                        li(data-option-value='.brands')
+                            a(href='#') Ходова
+                        li(data-option-value='.medias')
+                            a(href='#') Трансмісія
+            .col-md-9
+                .row
+                    .sort-destination-loader.sort-destination-loader-showing
+                        ul.portfolio-list.sort-destination(data-sort-id='portfolio')
+                            li.col-md-4.isotope-item.brands
+                                .portfolio-item
+                                    a(href='index-product.html')
+                                        span.thumb-info.thumb-info-lighten
+                                            span.thumb-info-wrapper
+                                                img.img-responsive(src='img/nc-catalog/tp-fresh.jpg', alt='')
+                                                span.thumb-info-title
+                                                    span.thumb-info-inner Euro Fresh
+                                                    span.thumb-info-type Лікувальні пасти
+                                                span.thumb-info-action
+                                                    span.thumb-info-action-icon
+                                                        i.fa.fa-link
+                            li.col-md-4.isotope-item.medias
+                                .portfolio-item
+                                    a(href='index-product.html')
+                                        span.thumb-info.thumb-info-lighten.thumb-info-no-zoom
+                                            span.thumb-info-wrapper
+                                                span.owl-carousel.owl-theme.nav-inside.m-none(data-plugin-options='{"items": 1, "margin": 10, "animateOut": "fadeOut", "autoplay": true, "autoplayTimeout": 3000}')
+                                                    span
+                                                        img.img-responsive(src='img/nc-catalog/i-ad.jpg', alt='')
+                                                    span
+                                                        img.img-responsive(src='img/nc-catalog/i-ad-2.jpg', alt='')
+                                                span.thumb-info-title
+                                                    span.thumb-info-inner Аденотом
+                                                    span.thumb-info-type Медичні інструменти
+                                                span.thumb-info-action
+                                                    span.thumb-info-action-icon
+                                                        i.fa.fa-link
+
+
+                            li.col-md-4.isotope-item.logos
+                                .portfolio-item
+                                    a(href='index-product.html')
+                                        span.thumb-info.thumb-info-lighten
+                                            span.thumb-info-wrapper
+                                                img.img-responsive(src='img/nc-catalog/o-list.jpeg', alt='')
+                                                span.thumb-info-title
+                                                    span.thumb-info-inner Listerine
+                                                    span.thumb-info-type Ополіскувачі
+                                                span.thumb-info-action
+                                                    span.thumb-info-action-icon
+                                                        i.fa.fa-link
+
+                            li.col-md-4.isotope-item.websites
+                                .portfolio-item
+                                    a(href='index-product.html')
+                                        span.thumb-info.thumb-info-lighten
+                                            span.thumb-info-wrapper
+                                                img.img-responsive(src='img/nc-catalog/tb-reach.jpg', alt='')
+                                                span.thumb-info-title
+                                                    span.thumb-info-inner Reach
+                                                    span.thumb-info-type Зубні щітки
+                                                span.thumb-info-action
+                                                    span.thumb-info-action-icon
+                                                        i.fa.fa-link
